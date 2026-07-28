@@ -7,3 +7,4 @@ backup/
 .venv/
 .notebook/
 scraper/big_query
+scraper/local/__pycache__
