@@ -1,1 +1,9 @@
 scraper/local/config.py
+to_sort/
+raw_bucket/
+logs/
+dashboards/
+backup/
+.venv/
+.notebook/
+scraper/big_query
