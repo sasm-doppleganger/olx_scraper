@@ -1,0 +1,250 @@
+columns:
+  identity:
+    - bronze: id
+      staging: listing_id
+      keep: true
+      description: OLX listing identifier
+      silver_type: STRING
+
+    - bronze: url
+      staging: listing_url
+      keep: true
+      description: OLX listing url
+      silver_type: STRING
+
+    - bronze: url
+      staging: listing_url
+      keep: true
+      description: OLX listing url
+      silver_type: STRING
+
+    - bronze: description
+      staging: listing_desription
+      keep: true
+      description: original listing description
+      silver_type: STRING
+
+  location:
+    - bronze: city
+      staging: city
+      keep: true
+      description: no transformation
+      silver_type: STRING
+
+    - bronze: region
+      staging: region 
+      keep: true
+      description: no transformation
+      silver_type: STRING
+
+  pricing:
+    - bronze: Cina
+      staging: price
+      keep: true
+      description: already numeric
+      silver_type: NUMERIC
+
+    - bronze: Bez_komiciji
+      staging: comission_raw 
+      keep: true
+      description: needs parsing (2 values, can be represented by bool)
+      silver_type: BOOL
+
+    - bronze: Hotovyj_spivpracjuvaty_z_rieltoramy
+      staging: ready_to_work_with_realtors_raw
+      keep: true
+      description: needs parsing (2 values, can be represented by bool)
+      silver_type: BOOL  
+
+    - bronze: Dlja_spil'noji_orendy
+      staging: for_shared_rent_raw
+      keep: true
+      description: needs parsing (2 values, can be represented by bool) 
+      silver_type: BOOL
+
+  building_info:
+    - bronze: Typ_budynku
+      staging: building_type
+      keep: true
+      description: dont need parsinng
+      silver_type: STRING
+
+    - bronze: Poverxovist'
+      staging: total_floors
+      keep: true
+      description: dont need parsing
+      silver_type: INT
+
+    - bronze: Typ_stin
+      staging: wall_type
+      keep: true
+      description: dont need parsing
+      silver_type: STRING
+
+    - bronze: Opalennja
+      staging: heating_type
+      keep: true
+      description: dont need parsing
+      silver_type: STRING  
+
+    - bronze: Rik_vvedennja_v_ekspluataciju
+      staging: introduction_year
+      keep: true
+      description: dont need parsing
+      silver_type: INT  
+
+  apartment_details:
+    - bronze: Poverx
+      staging: floor_raw
+      keep: true
+      description: needs parsing
+      silver_type: INT
+
+    - bronze: Zahal'na_plošča
+      staging: total_area_raw
+      keep: true
+      description: needs parsing
+      silver_type: INT
+
+    - bronze: Plošča_kuxni
+      staging: kitchen_area_raw
+      keep: true
+      description: needs parsing
+      silver_type: INT
+
+    - bronze: Kil'kist'_kimnat
+      staging: number_of_rooms_raw
+      keep: true
+      description: needs parsing
+      silver_type: INT
+    
+    - bronze: Planuvannja
+      staging: apartment_layout
+      keep: true
+      description: dont need parsing
+      silver_type: STRING 
+    
+    - bronze: Canvuzol
+      staging: toilet_layout
+      keep: true
+      description: dont need parsing
+      silver_type: STRING 
+    
+    - bronze: Remont
+      staging: renovation
+      keep: true
+      description: dont need parsing
+      silver_type: STRING
+
+    - bronze: Domašni_uljublenci
+      staging: allowed_pets
+      keep: true
+      description: null?
+      silver_type: STRING
+
+  amenities:
+    - bronze: Mebljuvannja
+      staging: furniture
+      keep: true
+      description: needs parsing
+      silver_type: BOOL OR STRING
+
+    - bronze: Pobutova_texnika
+      staging: appliances
+      keep: unknown
+      description: null?
+      silver_type: unknown   
+
+    - bronze: Mul'tymedia
+      staging: multimedia
+      keep: unknown
+      description: null?  
+      silver_type: unknown  
+
+    - bronze: Komfort
+      staging: comfort
+      keep: unknown
+      description: null?  
+      silver_type: unknown 
+
+    - bronze: Komunikaciji
+      staging: communications
+      keep: unknown
+      description: null?  
+      silver_type: unknown
+
+    - bronze: Avtonomnist'_pry_blekauti
+      staging: blackout_ready
+      keep: unknown
+      description: null?  
+      silver_type: unknown  
+
+  infrastructure:
+    - bronze: Infrastruktura_do_500_metriv
+      staging: 500m_infrastructure_raw
+      keep: true
+      description: needs parsing (empty column), maybe split into more columns?
+      silver_type: STRING
+
+    - bronze: Landšaft_do_1_km
+      staging: 1km_landcape_raw
+      keep: true
+      description: needs parsing (empty column), maybe split into more columns?
+      silver_type: STRING
+
+  metadata:
+    - bronze: scraped_at
+      staging: scraped_at_raw
+      keep: true
+      description: needs type change
+
+
+  further_look:
+    - bronze: Dodatkovo
+
+    - bronze: Inkljuzyvnist'
+
+    - bronze: Roztašuvannja
+      
+    - bronze: Typ_ob'jekta
+    
+    - bronze: Rik_pobudovy_zdači
+
+    - bronze: Klas_žytla
+
+    - bronze: Nazva_ŽK
+
+    - bronze: Typ_posluhy
+
+    - bronze: Poverxovis__'
+
+    - bronze: Typ_uhody
+
+    - bronze: Typ
+
+  filter_out_flags:
+    - bronze: Cina_za_dobu
+
+    - bronze: Minimal'na_kil'kist'_nočej
+
+    - bronze: Možlyva_zdača_pohodynno
+
+    - bronze: Kil'kist'_spal'nyx_misc'
+
+    - bronze: Xarčuvannja
+
+    - bronze: Vidstan'_do_najblyžčoho_mista
+
+    - bronze: Typ_ofisu
+
+    - bronze: Klas_ofisu
+
+    - bronze: Pidxodyt'_pid_vymohy_jeOselja
+
+    - bronze: Plošča_diljanky
+
+    - bronze: Prodaž_vid_zabudovnyka
+
+    - bronze: Vyd_ob'jekta
+
+    - bronze: Možlyvist'_obminu

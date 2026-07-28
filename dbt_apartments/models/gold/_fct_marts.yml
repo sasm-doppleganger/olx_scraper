@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: fct_market_daily
+    description: daily summary of median values
+
+    columns:
+      - name: scrape_date
+        tests:
+          - unique
+          - not_null
+
+
+  - name: fct_market_derived_values
+    description: quartiles, max/min values of and price fluctuations of last day's scrape compared to a day of x days ago
+
+
+  - name: fct_weekly_area_price_consistency
+    description: MAIN table of this week's listings with predicted values and flags      
+
+
+  - name: fct_weekly_derived_values
+    description: approximated quantiles that are used to group listings in fct_weekly_area_price_consistency 

@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+ - name: staging
+   schema: staging
+   tables:
+    - name: landing
+
+
+models:
+
+  - name: bronze_listings
+    description: Main bronze table, with listings of each day
+
+    columns:
+      - name: id
+        description: native listings' id
+  
+
+
+

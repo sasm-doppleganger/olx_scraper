@@ -1,0 +1,44 @@
+version: 2
+
+models:
+
+  - name: dim_kyiv_rentals
+
+    columns:
+      - name: city
+        tests:
+          - accepted_values:
+              values: ['Київ']
+
+
+  - name: dim_podil_rentals
+
+    columns:
+      - name: district
+        tests:
+          - accepted_values:
+              values: ['Подільський']
+  
+
+  - name: dim_removed_rentals
+    description: listings that weren't present in latest scrape
+  
+    columns:
+      - name: id_str
+      - name: url 
+
+
+  - name: dim_weekly_listings
+    description: listings scraped after last sunday
+
+
+  - name: dim_weekly_new_listings
+    description: id_str not in last sundays scrape from dim_podil_rentals
+
+
+  - name: dim_weekly_active_listings
+    description: listings where id_str not in dim_removed_rentals
+
+    columns:
+      - name: is_new
+        description: BOOL defined by presence of same row in dim_weekly_new_rentals
