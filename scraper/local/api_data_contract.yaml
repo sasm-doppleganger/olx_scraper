@@ -1,0 +1,331 @@
+apiVersion: v3.2.0
+kind: DataContract
+id: 12345678-fakeid-12345678
+name: None
+version: 1.0.0
+status: draft
+description:
+  purpose: testing
+  limitations: limitless
+  usage: infinite
+schema:
+- name: sleep_efficiency__raw
+  properties:
+  - name: id
+    logicalType: int64
+  - name: created_time
+    logicalType: str
+  - name: valid_to_time
+    logicalType: str
+  - name: title
+    logicalType: str
+  - name: status
+    logicalType: str
+  - name: url
+    logicalType: str
+  - name: description
+    logicalType: str
+  - name: city
+    logicalType: str
+  - name: district
+    logicalType: str
+  - name: region
+    logicalType: str
+  - name: price_org
+    logicalType: float64
+  - name: currency_org
+    logicalType: str
+  - name: price_uah
+    logicalType: float64
+  - name: commission_key
+    logicalType: str
+  - name: commission_label
+    logicalType: str
+  - name: cooperate_key
+    logicalType: str
+  - name: cooperate_label
+    logicalType: str
+  - name: joint_lease_key
+    logicalType: str
+  - name: joint_lease_label
+    logicalType: str
+  - name: property_type_appartments_sale_key
+    logicalType: str
+  - name: property_type_appartments_sale_label
+    logicalType: str
+  - name: floor_key
+    logicalType: str
+  - name: floor_label
+    logicalType: str
+  - name: year_of_commissioning_key
+    logicalType: str
+  - name: year_of_commissioning_label
+    logicalType: str
+  - name: total_floors_key
+    logicalType: str
+  - name: total_floors_label
+    logicalType: str
+  - name: total_area_key
+    logicalType: str
+  - name: total_area_label
+    logicalType: str
+  - name: kitchen_area_key
+    logicalType: str
+  - name: kitchen_area_label
+    logicalType: str
+  - name: house_type_key
+    logicalType: str
+  - name: house_type_label
+    logicalType: str
+  - name: pets_yes_cat
+    logicalType: float64
+  - name: pets_yes_small_dog
+    logicalType: float64
+  - name: number_of_rooms_string_key
+    logicalType: str
+  - name: number_of_rooms_string_label
+    logicalType: str
+  - name: blackout_autonomy_heating
+    logicalType: float64
+  - name: blackout_autonomy_internet
+    logicalType: float64
+  - name: blackout_autonomy_water_supply
+    logicalType: float64
+  - name: layout_key
+    logicalType: str
+  - name: layout_label
+    logicalType: str
+  - name: bathroom_key
+    logicalType: str
+  - name: bathroom_label
+    logicalType: str
+  - name: heating_key
+    logicalType: str
+  - name: heating_label
+    logicalType: str
+  - name: repair_key
+    logicalType: str
+  - name: repair_label
+    logicalType: str
+  - name: furnish_key
+    logicalType: str
+  - name: furnish_label
+    logicalType: str
+  - name: appliances_2_fridge
+    logicalType: float64
+  - name: appliances_2_iron
+    logicalType: float64
+  - name: appliances_2_oven
+    logicalType: float64
+  - name: appliances_2_stove
+    logicalType: float64
+  - name: appliances_2_vacuum_cleaner
+    logicalType: float64
+  - name: appliances_2_washer
+    logicalType: float64
+  - name: multimedia_2_speed_internet
+    logicalType: float64
+  - name: comfort_air_conditioning
+    logicalType: float64
+  - name: comfort_balcony_loggia
+    logicalType: float64
+  - name: comfort_bath
+    logicalType: float64
+  - name: comfort_kitchen_furniture
+    logicalType: float64
+  - name: comfort_wardrobe
+    logicalType: float64
+  - name: communications_gas
+    logicalType: float64
+  - name: communications_water_central
+    logicalType: float64
+  - name: infrastructure_500_m_bank_ATM
+    logicalType: float64
+  - name: infrastructure_500_m_cinema_theater
+    logicalType: float64
+  - name: infrastructure_500_m_city_center
+    logicalType: float64
+  - name: infrastructure_500_m_farmacy
+    logicalType: float64
+  - name: infrastructure_500_m_kindergarten
+    logicalType: float64
+  - name: infrastructure_500_m_metro
+    logicalType: float64
+  - name: infrastructure_500_m_park
+    logicalType: float64
+  - name: infrastructure_500_m_playground
+    logicalType: float64
+  - name: infrastructure_500_m_post_office
+    logicalType: float64
+  - name: infrastructure_500_m_restaurant_cafe
+    logicalType: float64
+  - name: infrastructure_500_m_school
+    logicalType: float64
+  - name: infrastructure_500_m_shop_kiosk
+    logicalType: float64
+  - name: infrastructure_500_m_supermarket_mall
+    logicalType: float64
+  - name: infrastructure_500_m_transport_stop
+    logicalType: float64
+  - name: ecosystem_1_km_river
+    logicalType: float64
+  - name: offset
+    logicalType: int64
+  - name: pets_no
+    logicalType: float64
+  - name: appliances_2_coffeemachine
+    logicalType: float64
+  - name: appliances_2_electric_kettle
+    logicalType: float64
+  - name: appliances_2_hob
+    logicalType: float64
+  - name: appliances_2_microwave
+    logicalType: float64
+  - name: multimedia_2_cable_digital
+    logicalType: float64
+  - name: comfort_elevator
+    logicalType: float64
+  - name: comfort_fire_alarm
+    logicalType: float64
+  - name: comfort_panoramic_windows
+    logicalType: float64
+  - name: comfort_shower
+    logicalType: float64
+  - name: comfort_signaling
+    logicalType: float64
+  - name: communications_asphalt_road
+    logicalType: float64
+  - name: communications_central_sewerage_system
+    logicalType: float64
+  - name: communications_electricity
+    logicalType: float64
+  - name: additional_foreigners
+    logicalType: float64
+  - name: blackout_autonomy_backup_power_supply
+    logicalType: float64
+  - name: blackout_autonomy_elevator
+    logicalType: float64
+  - name: multimedia_2_tv
+    logicalType: float64
+  - name: multimedia_2_wifi
+    logicalType: float64
+  - name: comfort_CCTV
+    logicalType: float64
+  - name: comfort_protected_area
+    logicalType: float64
+  - name: comfort_service_lift
+    logicalType: float64
+  - name: comfort_concierge
+    logicalType: float64
+  - name: comfort_ground_parking
+    logicalType: float64
+  - name: comfort_guest_parking
+    logicalType: float64
+  - name: comfort_heated_floors
+    logicalType: float64
+  - name: appliances_2_dishwasher
+    logicalType: float64
+  - name: comfort_parking_place
+    logicalType: float64
+  - name: communications_garbage_removal
+    logicalType: float64
+  - name: infrastructure_500_m_hospital
+    logicalType: float64
+  - name: pets_yes_big_dog
+    logicalType: float64
+  - name: pets_yes_medium_dog
+    logicalType: float64
+  - name: pets_yes_other
+    logicalType: float64
+  - name: appliances_2_drying_machine
+    logicalType: float64
+  - name: appliances_2_hair_dryer
+    logicalType: float64
+  - name: appliances_2_multi-cooking
+    logicalType: float64
+  - name: multimedia_2_satellite
+    logicalType: float64
+  - name: comfort_garage
+    logicalType: float64
+  - name: comfort_stand-alone_power
+    logicalType: float64
+  - name: comfort_storage
+    logicalType: float64
+  - name: comfort_tech_smart_house
+    logicalType: float64
+  - name: comfort_terrace
+    logicalType: float64
+  - name: comfort_windows_lattices
+    logicalType: float64
+  - name: communications_sewerage_septic_tank
+    logicalType: float64
+  - name: communications_well
+    logicalType: float64
+  - name: infrastructure_500_m_bus_station
+    logicalType: float64
+  - name: infrastructure_500_m_market
+    logicalType: float64
+  - name: infrastructure_500_m_pump
+    logicalType: float64
+  - name: infrastructure_500_m_railway_station
+    logicalType: float64
+  - name: ecosystem_1_km_forest
+    logicalType: float64
+  - name: ecosystem_1_km_hills
+    logicalType: float64
+  - name: ecosystem_1_km_islands
+    logicalType: float64
+  - name: ecosystem_1_km_lake
+    logicalType: float64
+  - name: ecosystem_1_km_mountains
+    logicalType: float64
+  - name: ecosystem_1_km_park
+    logicalType: float64
+  - name: ecosystem_1_km_reservoir
+    logicalType: float64
+  - name: additional_smoke
+    logicalType: float64
+  - name: additional_students
+    logicalType: float64
+  - name: additional_with_children
+    logicalType: float64
+  - name: inclusiveness_elevator_door_width_0_9m
+    logicalType: float64
+  - name: inclusiveness_elevator_size_1_1x1_4m
+    logicalType: float64
+  - name: inclusiveness_elevator_voice_announcements
+    logicalType: float64
+  - name: inclusiveness_high_contrast_markings
+    logicalType: float64
+  - name: inclusiveness_ramp_handrails
+    logicalType: float64
+  - name: inclusiveness_ramp_length_over_2_4m
+    logicalType: float64
+  - name: inclusiveness_ramp_length_up_to_2_4m
+    logicalType: float64
+  - name: inclusiveness_ramp_rest_platform
+    logicalType: float64
+  - name: inclusiveness_stairs_handrails
+    logicalType: float64
+  - name: inclusiveness_street_level_entry
+    logicalType: float64
+  - name: inclusiveness_tactile_floor_strips
+    logicalType: float64
+  - name: inclusiveness_wide_entrance_doors_0_9m
+    logicalType: float64
+  - name: ecosystem_1_km_sea
+    logicalType: float64
+  - name: additional_only_family
+    logicalType: float64
+  - name: multimedia_2_no_multimedia
+    logicalType: float64
+  - name: communications_no_comm
+    logicalType: float64
+  - name: scraped_at
+    logicalType: str
+servers:
+- id: my_awesome_server
+  server: my-server-name
+  type: local
+  format: parquet
+  path: ./input/chunks/part_*.csv
